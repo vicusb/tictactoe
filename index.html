@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="iconvicus.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/6b191a9eea.js" crossorigin="anonymous"></script>
+    <title>Tic-Tac-Toe by vicus</title>
+</head>
+
+<body>
+    
+
+    <div class="overlay hide">
+        
+        <img id="ticimage" src="Tic-TXc-TOe.png" alt="Tic-Tac-Toe!">
+        
+        <div class="form">
+           
+            <section>
+                <label for="human" class="hide">Human vs Human</label>
+                <input type="radio" name="gamemode" id="human" value="human"  class="hide" checked>
+                
+                <label for="ai" class="hide">Human vs AI</label>
+                <input type="radio" name="gamemode" id="ai" value="ai" class="hide">
+                
+            </section>
+    
+            <section class="names">
+                <label for="player1">Player 1 Name</label>
+                <input type="text" id="player1" placeholder="Enter the name of Player 1" required><br>
+                <label id="player2label" for="player2" >Player 2 Name</label>
+                <input type="text" id="player2" placeholder="Enter the name of Player 2" required><br>
+                <button>PLAY!</button>
+            </section>
+            
+            
+        </div>
+
+
+    </div>
+    
+
+    <div class="table hide">
+        <main id="gameboard">
+
+            <div class="square" id="nw"></div>
+            <div class="square" id="n"></div>
+            <div class="square" id="ne"></div>
+            <div class="square" id="w"></div>
+            <div class="square" id="o"></div>
+            <div class="square" id="e"></div>
+            <div class="square" id="sw"></div>
+            <div class="square" id="s"></div>
+            <div class="square" id="se"></div>
+    
+        </main>
+
+        <div id="scoreboard">
+            <div id="player1points"><span class="x">X</span>Player 1:</div>
+            <div id="tiepoints">Ties:</div>
+            <div id="player2points">Player 2:</div>
+        </div>
+            
+        <button id="newGame">New Game!</button>
+    </div>
+
+    <div id="message1" class="message hide">PLAYER 1 WINS!</div>
+    <div id="message2" class="message hide">PLAYER 2 WINS!</div>
+    <div id="message3" class="message hide">DRAW!</div>
+
+    
+    
+    <a href='https://github.com/vicusb' id="signature">
+        vicus <i class="fab fa-github"></i>
+    </a>
+</body>
+
+</html>
