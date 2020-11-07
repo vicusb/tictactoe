@@ -351,5 +351,38 @@ button {
       opacity: 1;
     }
   }
-  
+   
+  /* On screens that are 400px or less*/
+  @media screen and (max-width: 500px) {
+
+    body {
+        background: url("cool-background-turned.png");
+        background-size: cover;
+    }
+    img {
+        width: 40rem;
+    }
+
+    #gameboard {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    #gameboard > div {
+        border-width: 1rem;
+        font-size: 8rem;
+    }
+
+    #scoreboard {
+        font-size: 2rem;
+    }
+
+    .message {
+        font-size: 2rem;
+    }
+
+    .table {
+        height: 100%;
+    }
+  }
   
